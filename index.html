@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Wholesale Vegetable Market Association - Visakhapatnam</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    animation: {
+                        'float-slow': 'float 18s ease-in-out infinite',
+                        'float-reverse': 'floatReverse 22s ease-in-out infinite',
+                        'pulse-subtle': 'pulseSubtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translate(0px, 0px) rotate(0deg)' },
+                            '50%': { transform: 'translate(25px, -35px) rotate(12deg)' },
+                        },
+                        floatReverse: {
+                            '0%, 100%': { transform: 'translate(0px, 0px) rotate(0deg)' },
+                            '50%': { transform: 'translate(-30px, 25px) rotate(-15deg)' },
+                        },
+                        pulseSubtle: {
+                            '0%, 100%': { opacity: 0.15 },
+                            '50%': { opacity: 0.28 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Animated Watermark Background Elements */
+        .watermark-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+            opacity: 0.08;
+        }
+
+        .dark .watermark-container {
+            opacity: 0.04;
+        }
+
+        .watermark-item {
+            position: absolute;
+            font-size: 6rem;
+            user-select: none;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Glassmorphism Styles */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass-panel {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.5);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(107, 114, 128, 0.8);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen relative flex flex-col transition-colors duration-300">
+
+    <!-- ANIMATED VEGETABLE WATERMARK BACKGROUND -->
+    <div class="watermark-container" aria-hidden="true">
+        <i class="fa-solid fa-carrot watermark-item animate-float-slow text-orange-500" style="top: 10%; left: 8%;"></i>
+        <i class="fa-solid fa-apple-whole watermark-item animate-float-reverse text-red-500" style="top: 25%; right: 12%;"></i>
+        <i class="fa-solid fa-pepper-hot watermark-item animate-float-slow text-emerald-500" style="top: 60%; left: 15%;"></i>
+        <i class="fa-solid fa-lemon watermark-item animate-float-reverse text-yellow-500" style="top: 75%; right: 20%;"></i>
+        <i class="fa-solid fa-leaf watermark-item animate-float-slow text-green-500" style="top: 40%; left: 75%;"></i>
+        <i class="fa-solid fa-seedling watermark-item animate-float-reverse text-lime-500" style="top: 85%; left: 45%;"></i>
+        <i class="fa-solid fa-carrot watermark-item animate-float-reverse text-amber-500" style="top: 15%; left: 45%;"></i>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="sticky top-0 z-40 glass-panel border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+            <!-- Brand Logo & Title -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                    <i class="fa-solid fa-store text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white leading-tight">
+                        Vaishnavi Wholesale Market
+                    </h1>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5 font-medium">
+                        <i class="fa-solid fa-location-dot text-rose-500"></i> Convent Junction, Visakhapatnam - 530004
+                    </p>
+                </div>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                    <i id="themeIcon" class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Admin Login Button -->
+                <button onclick="openAdminLoginModal()" class="px-3.5 py-2 rounded-xl border border-amber-300 dark:border-amber-700/60 bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 text-xs sm:text-sm font-bold hover:bg-amber-100 dark:hover:bg-amber-900/50 transition flex items-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span class="hidden sm:inline">Admin Panel</span>
+                </button>
+
+                <!-- Dynamic Auth Button (Owner Login / Dashboard) -->
+                <div id="authButtonContainer">
+                    <button onclick="openLoginModal()" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-brand-600/20 transition flex items-center gap-2">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>Shop Owner Login</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT WRAPPER -->
+    <main class="flex-grow z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
+
+        <!-- HERO ANNOUNCEMENT BANNER -->
+        <section class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-brand-800 via-brand-700 to-emerald-900 text-white p-6 sm:p-8 shadow-xl">
+            <div class="relative z-10 max-w-2xl space-y-3">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-500/20 text-brand-200 text-xs font-bold border border-brand-400/30">
+                    <i class="fa-solid fa-circle text-[8px] text-brand-400 animate-pulse"></i> Official Consensus Daily Rates
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+                    Visakhapatnam's Wholesale Produce Exchange
+                </h2>
+                <p class="text-xs sm:text-sm text-brand-100/90 leading-relaxed">
+                    Live majority-consensus pricing calculated transparently from verified shop owner quotations across Convent Junction Market Yard.
+                </p>
+                <div class="pt-2 flex flex-wrap gap-4 text-xs font-semibold text-brand-200">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-calendar-day text-amber-400"></i>
+                        <span id="currentDateDisplay">Today's Market Rates</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-shop text-amber-400"></i>
+                        <span id="totalShopsBadge">8 Active Traders</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative Icon -->
+            <i class="fa-solid fa-truck-field absolute -right-6 -bottom-6 text-9xl opacity-10 text-white pointer-events-none"></i>
+        </section>
+
+        <!-- MARKET PRICE DISPLAY TABLE SECTION -->
+        <section class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line text-brand-600 dark:text-brand-400"></i>
+                        Daily Wholesale Vegetable Rates
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Prices reflect the majority-consensus quotes submitted by registered members.</p>
+                </div>
+
+                <!-- Search and Filter Bar -->
+                <div class="flex items-center gap-2">
+                    <div class="relative w-full sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="vegSearchInput" oninput="renderPriceTable()" placeholder="Search vegetable..." class="w-full pl-9 pr-4 py-2 rounded-xl text-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Table Card -->
+            <div class="glass-panel rounded-2xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-100/80 dark:bg-slate-900/80 text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider border-b border-slate-200 dark:border-slate-800">
+                            <tr>
+                                <th scope="col" class="py-4 px-6">Vegetable</th>
+                                <th scope="col" class="py-4 px-4 text-center">Unit</th>
+                                <th scope="col" class="py-4 px-4 text-center text-emerald-600 dark:text-emerald-400">
+                                    <i class="fa-solid fa-arrow-down-short-wide mr-1"></i> Min Price (₹)
+                                </th>
+                                <th scope="col" class="py-4 px-4 text-center text-rose-600 dark:text-rose-400">
+                                    <i class="fa-solid fa-arrow-up-wide-short mr-1"></i> Max Price (₹)
+                                </th>
+                                <th scope="col" class="py-4 px-4 text-center">Consensus Quotes</th>
+                                <th scope="col" class="py-4 px-6 text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="priceTableBody" class="divide-y divide-slate-100 dark:divide-slate-800/60 font-medium">
+                            <!-- Rendered Dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASSOCIATION EXECUTIVES & SHOP OWNERS DIRECTORY -->
+        <section class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <h3 class="text-xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-users text-amber-500"></i>
+                        Association Executives & Member Shop Owners
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Directory of executive body and registered market shop owners.</p>
+                </div>
+                <div class="w-full sm:w-64">
+                    <input type="text" id="memberSearchInput" oninput="renderMembers()" placeholder="Search owner, shop, or role..." class="w-full px-4 py-2 rounded-xl text-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+            </div>
+
+            <!-- Members Grid -->
+            <div id="membersGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Rendered Dynamically via JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 dark:text-slate-400 space-y-1">
+            <p class="font-semibold text-slate-700 dark:text-slate-300">
+                Vaishnavi Wholesale Vegetable Market Association
+            </p>
+            <p>Convent Junction, Visakhapatnam, Andhra Pradesh - 530004</p>
+            <p class="text-[11px] text-slate-400 pt-2">&copy; <span id="footerYear">2026</span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: SHOP OWNER LOGIN MODAL -->
+    <div id="loginModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="glass-panel w-full max-w-md rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-store text-brand-600 dark:text-brand-400"></i> Shop Owner Login
+                </h3>
+                <button onclick="closeLoginModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <form onsubmit="handleMemberLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Select Member Account</label>
+                    <select id="loginMemberSelect" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-brand-500">
+                        <!-- Populated dynamically -->
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Passcode (Default: 1234)</label>
+                    <input type="password" id="loginPasscode" value="1234" placeholder="Enter passcode" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-brand-500">
+                </div>
+                <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login to Shop Portal
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 2: SHOP OWNER DASHBOARD MODAL -->
+    <div id="dashboardModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 space-y-4 max-h-[90vh] flex flex-col">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                <div class="flex items-center gap-3">
+                    <img id="dashAvatar" src="" class="w-10 h-10 rounded-xl object-cover border border-slate-200">
+                    <div>
+                        <h3 id="dashMemberName" class="text-base font-bold text-slate-900 dark:text-white"></h3>
+                        <p id="dashShopName" class="text-xs text-brand-600 dark:text-brand-400 font-semibold"></p>
+                    </div>
+                </div>
+                <button onclick="closeDashboardModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto space-y-4 pr-1">
+                <div class="p-3 bg-amber-50 dark:bg-amber-950/30 rounded-xl border border-amber-200 dark:border-amber-900/40 text-xs text-amber-800 dark:text-amber-300">
+                    <i class="fa-solid fa-circle-info mr-1"></i> You can only update rates for produce assigned to your shop by the association admin.
+                </div>
+
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-100 dark:bg-slate-900 text-xs font-bold text-slate-600 dark:text-slate-300">
+                        <tr>
+                            <th class="py-2.5 px-3">Vegetable</th>
+                            <th class="py-2.5 px-3 text-center">Unit</th>
+                            <th class="py-2.5 px-3 text-center">Min Quote (₹)</th>
+                            <th class="py-2.5 px-3 text-center">Max Quote (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashPriceUpdateRows">
+                        <!-- Allotted vegetables inputs dynamically rendered -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex justify-end gap-3">
+                <button onclick="logoutShopOwner()" class="px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-xs font-bold hover:bg-slate-100 dark:hover:bg-slate-800">
+                    Logout
+                </button>
+                <button onclick="saveShopOwnerPrices()" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-md transition flex items-center gap-2">
+                    <i class="fa-solid fa-check"></i> Submit Today's Quotes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: ADMIN LOGIN MODAL -->
+    <div id="adminLoginModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="glass-panel w-full max-w-sm rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                <h3 class="text-base font-bold text-amber-600 dark:text-amber-400 flex items-center gap-2">
+                    <i class="fa-solid fa-user-shield"></i> Association Admin Access
+                </h3>
+                <button onclick="closeAdminLoginModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Admin Username</label>
+                    <input type="text" id="adminUser" value="admin" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Password</label>
+                    <input type="password" id="adminPass" value="admin123" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                </div>
+                <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-key"></i> Authenticate Admin
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 4: ADMIN MANAGEMENT PANEL -->
+    <div id="adminPanelModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="glass-panel w-full max-w-3xl rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 space-y-4 max-h-[90vh] flex flex-col">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                <h3 class="text-lg font-bold text-amber-600 dark:text-amber-400 flex items-center gap-2">
+                    <i class="fa-solid fa-sliders"></i> Master Admin Control Center
+                </h3>
+                <button onclick="closeAdminPanelModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Admin Navigation Tabs -->
+            <div class="flex border-b border-slate-200 dark:border-slate-800 gap-2">
+                <button id="adminTabBtnAllotments" onclick="switchAdminTab('allotments')" class="px-4 py-2 text-xs font-bold border-b-2 border-amber-500 text-amber-600 dark:text-amber-400">
+                    <i class="fa-solid fa-list-check mr-1"></i> Produce Allotments
+                </button>
+                <button id="adminTabBtnReports" onclick="switchAdminTab('reports')" class="px-4 py-2 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-file-csv mr-1"></i> Export & Reports
+                </button>
+                <button id="adminTabBtnAddMember" onclick="switchAdminTab('addMember')" class="px-4 py-2 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-shop mr-1"></i> Add New Shop Owner
+                </button>
+                <button id="adminTabBtnAddVeg" onclick="switchAdminTab('addVeg')" class="px-4 py-2 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">
+                    <i class="fa-solid fa-carrot mr-1"></i> Add New Vegetable
+                </button>
+            </div>
+
+            <!-- TAB 1: ALLOTMENTS MANAGEMENT -->
+            <div id="adminTabAllotments" class="flex-grow overflow-y-auto space-y-4 pr-1">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Select Member / Shop Owner</label>
+                    <select id="adminMemberSelect" onchange="renderAdminAllotments()" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm font-semibold text-slate-900 dark:text-white">
+                        <!-- Dynamic options -->
+                    </select>
+                </div>
+
+                <div class="border rounded-2xl border-slate-200 dark:border-slate-800 overflow-hidden">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-100 dark:bg-slate-900 text-xs font-bold text-slate-600 dark:text-slate-300">
+                            <tr>
+                                <th class="py-3 px-4">Vegetable Listing</th>
+                                <th class="py-3 px-4 text-center">Unit</th>
+                                <th class="py-3 px-4 text-center">Allotment Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="adminAllotmentRows" class="divide-y divide-slate-100 dark:divide-slate-800">
+                            <!-- Checkboxes dynamically rendered -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB 2: ADD NEW SHOP OWNER FORM -->
+            <div id="adminTabAddMember" class="hidden flex-grow overflow-y-auto p-2">
+                <form onsubmit="handleAddNewMember(event)" class="space-y-4 max-w-xl mx-auto">
+                    <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-shop text-amber-500"></i> Register New Shop & Owner
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="sm:col-span-1">
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Shop No.</label>
+                            <input type="text" id="newMemberShopNumber" required placeholder="e.g. Shop #09" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Owner Name</label>
+                            <input type="text" id="newMemberName" required placeholder="e.g. Sri K. Suresh" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Shop Name / Firm</label>
+                            <input type="text" id="newMemberShop" required placeholder="e.g. Suresh Fresh Veggies" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Role / Designation</label>
+                            <select id="newMemberRole" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                                <option value="Shop Owner Member">Shop Owner Member</option>
+                                <option value="Executive Member">Executive Member</option>
+                                <option value="President">President</option>
+                                <option value="Vice President">Vice President</option>
+                                <option value="Secretary">Secretary</option>
+                                <option value="Treasurer">Treasurer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Phone Number</label>
+                            <input type="tel" id="newMemberPhone" required placeholder="e.g. +91 98480 99999" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Photo URL (Optional)</label>
+                            <input type="url" id="newMemberPhoto" placeholder="https://..." class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-user-plus"></i> Register Member & Allot Produce
+                    </button>
+                </form>
+            </div>
+
+            <!-- TAB 3: EXPORTS & GOOGLE SHEETS INTEGRATION -->
+            <div id="adminTabReports" class="hidden flex-grow overflow-y-auto p-2 space-y-6">
+                <!-- Data Download Section -->
+                <div class="bg-slate-50 dark:bg-slate-900/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3">
+                    <h4 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-file-excel text-emerald-600"></i> Download Full Market Data & Reports (.CSV)
+                    </h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">
+                        Download comprehensive spreadsheet reports compatible with Microsoft Excel and Google Sheets.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                        <button onclick="exportPriceHistoryCSV()" class="p-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-download"></i> Daily Price History Log
+                        </button>
+                        <button onclick="exportConsensusCSV()" class="p-3 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-file-lines"></i> Consensus Market Rates
+                        </button>
+                        <button onclick="exportMembersCSV()" class="p-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-users"></i> Member & Shop Directory
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Google Sheets Webhook Configuration -->
+                <div class="bg-slate-50 dark:bg-slate-900/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+                            <i class="fa-solid fa-table-cells text-emerald-500"></i> Google Sheets Live Sync Setup
+                        </h4>
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
+                            Auto Sync Ready
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        To stream every daily price submission directly into your official Google Sheet in real-time, paste your <b>Google Apps Script Web App URL</b> below:
+                    </p>
+                    <div class="flex gap-2">
+                        <input type="url" id="googleSheetsWebhookUrl" placeholder="https://script.google.com/macros/s/AKfycb.../exec" class="flex-grow px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500">
+                        <button onclick="saveWebhookUrl()" class="px-4 py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold rounded-xl hover:opacity-90 transition">
+                            Save URL
+                        </button>
+                    </div>
+                    <div class="text-[11px] text-slate-400 bg-slate-100 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200/50 dark:border-slate-700/50 space-y-1">
+                        <p class="font-semibold text-slate-600 dark:text-slate-300">Quick Setup Instructions:</p>
+                        <ol class="list-decimal list-inside space-y-0.5">
+                            <li>Create a Google Sheet and go to <i>Extensions &gt; Apps Script</i>.</li>
+                            <li>Paste a standard `doPost(e)` script to write `JSON.parse(e.postData.contents)` to row.</li>
+                            <li>Deploy as Web App (Execute as: Me, Who has access: Anyone).</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: ADD NEW VEGETABLE FORM -->
+            <div id="adminTabAddVeg" class="hidden flex-grow overflow-y-auto p-2">
+                <form onsubmit="handleAddNewVegetable(event)" class="space-y-4 max-w-xl mx-auto">
+                    <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-plus text-amber-500"></i> Add New Vegetable Listing
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Vegetable Name</label>
+                            <input type="text" id="newVegName" required placeholder="e.g. Cauliflower" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Measurement Unit</label>
+                            <input type="text" id="newVegUnit" required placeholder="e.g. 1 Kg or 1 Dozen" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Display Icon</label>
+                        <select id="newVegIcon" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500">
+                            <option value="fa-solid fa-seedling">Seedling / Greens</option>
+                            <option value="fa-solid fa-carrot">Carrot / Root Veg</option>
+                            <option value="fa-solid fa-apple-whole">Apple / Round Veg</option>
+                            <option value="fa-solid fa-pepper-hot">Chilly / Pepper</option>
+                            <option value="fa-solid fa-lemon">Lemon / Citrus</option>
+                            <option value="fa-solid fa-leaf">Leafy Greens</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-plus-circle"></i> Add Vegetable to Market
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- JAVASCRIPT APPLICATION LOGIC -->
+    <script>
+        // Initial Default Vegetables
+        const INITIAL_VEGETABLES = [
+            { id: "v1", name: "Tomato (Tomato)", unit: "1 Kg", icon: "fa-solid fa-apple-whole text-rose-500" },
+            { id: "v2", name: "Onion (Ullipaya)", unit: "1 Kg", icon: "fa-solid fa-circle text-amber-600" },
+            { id: "v3", name: "Potato (Bangaladumpa)", unit: "1 Kg", icon: "fa-solid fa-cookie text-amber-700" },
+            { id: "v4", name: "Green Chilly (Mirapa)", unit: "1 Kg", icon: "fa-solid fa-pepper-hot text-emerald-500" },
+            { id: "v5", name: "Brinjal (Vankaya)", unit: "1 Kg", icon: "fa-solid fa-egg text-purple-600" },
+            { id: "v6", name: "Ladies Finger (Bhendi)", unit: "1 Kg", icon: "fa-solid fa-leaf text-green-500" },
+            { id: "v7", name: "Carrot", unit: "1 Kg", icon: "fa-solid fa-carrot text-orange-500" },
+            { id: "v8", name: "Lemon (Nimmakaya)", unit: "1 Dozen", icon: "fa-solid fa-lemon text-yellow-400" }
+        ];
+
+        // Initial Association Members Data
+        const INITIAL_MEMBERS = [
+            {
+                id: "m1",
+                name: "Sri M. Appala Raju",
+                role: "President",
+                shopNumber: "Shop #01",
+                shopName: "Appala Raju Wholesale Veggies",
+                phone: "+91 98480 12345",
+                photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-amber-100 text-amber-800 border-amber-300"
+            },
+            {
+                id: "m2",
+                name: "Sri K. Rama Rao",
+                role: "Vice President",
+                shopNumber: "Shop #02",
+                shopName: "Rama Krishna Spices & Veg Traders",
+                phone: "+91 94401 23456",
+                photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-amber-100 text-amber-800 border-amber-300"
+            },
+            {
+                id: "m3",
+                name: "Sri P. Venkateswara Rao",
+                role: "Secretary",
+                shopNumber: "Shop #03",
+                shopName: "Sri Venkateswara Market Yard Stalls",
+                phone: "+91 98491 34567",
+                photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-emerald-100 text-emerald-800 border-emerald-300"
+            },
+            {
+                id: "m4",
+                name: "Sri B. Trinadh",
+                role: "Treasurer",
+                shopNumber: "Shop #04",
+                shopName: "Trinadh Merchant & Co.",
+                phone: "+91 93931 45678",
+                photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-blue-100 text-blue-800 border-blue-300"
+            },
+            {
+                id: "m5",
+                name: "Sri G. Satyanarayana",
+                role: "Executive Member",
+                shopNumber: "Shop #05",
+                shopName: "Satya Farmers Direct Stall",
+                phone: "+91 98662 56789",
+                photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-slate-100 text-slate-800 border-slate-300"
+            },
+            {
+                id: "m6",
+                name: "Sri Ch. Srinivasa Rao",
+                role: "Executive Member",
+                shopNumber: "Shop #06",
+                shopName: "Chintala Wholesale Traders",
+                phone: "+91 94902 67890",
+                photo: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-slate-100 text-slate-800 border-slate-300"
+            },
+            {
+                id: "m7",
+                name: "Sri V. Nageswara Rao",
+                role: "Shop Owner Member",
+                shopNumber: "Shop #07",
+                shopName: "Visakha Fresh Green Chilly Mart",
+                phone: "+91 98853 78901",
+                photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-slate-100 text-slate-800 border-slate-300"
+            },
+            {
+                id: "m8",
+                name: "Sri D. Mohan Rao",
+                role: "Shop Owner Member",
+                shopNumber: "Shop #08",
+                shopName: "Mohan Onion & Potato Depot",
+                phone: "+91 99484 89012",
+                photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=300&auto=format&fit=crop&q=80",
+                badgeClass: "bg-slate-100 text-slate-800 border-slate-300"
+            }
+        ];
+
+        // State Variables
+        let vegetablesData = [];
+        let membersData = [];
+        let memberAllotments = {};
+        let priceSubmissions = {};
+        let priceLogs = []; // Historical log array for downloads & reports
+        let googleSheetsWebhookUrl = "";
+        let currentLoggedInMember = null;
+        let isAdminLoggedIn = false;
+
+        // Application Initialization
+        window.onload = function () {
+            setupDateDisplay();
+            loadStoredState();
+            renderPriceTable();
+            renderMembers();
+            populateLoginDropdown();
+            updateStats();
+        };
+
+        function setupDateDisplay() {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const todayStr = new Date().toLocaleDateString('en-IN', options);
+            document.getElementById('currentDateDisplay').textContent = todayStr;
+            document.getElementById('footerYear').textContent = new Date().getFullYear();
+        }
+
+        // State Storage Helpers
+        function loadStoredState() {
+            const vData = localStorage.getItem('vaishnavi_veggies');
+            vegetablesData = vData ? JSON.parse(vData) : INITIAL_VEGETABLES;
+
+            const mData = localStorage.getItem('vaishnavi_members');
+            membersData = mData ? JSON.parse(mData) : INITIAL_MEMBERS;
+
+            const aData = localStorage.getItem('vaishnavi_allotments');
+            if (aData) {
+                memberAllotments = JSON.parse(aData);
+            } else {
+                membersData.forEach(m => {
+                    memberAllotments[m.id] = vegetablesData.map(v => v.id);
+                });
+            }
+
+            const pData = localStorage.getItem('vaishnavi_submissions');
+            if (pData) {
+                priceSubmissions = JSON.parse(pData);
+            } else {
+                priceSubmissions = {
+                    "m1": { "v1": { min: 20, max: 24 }, "v2": { min: 25, max: 30 } },
+                    "m2": { "v1": { min: 20, max: 24 }, "v2": { min: 26, max: 30 } },
+                    "m3": { "v1": { min: 20, max: 25 }, "v2": { min: 25, max: 30 } },
+                    "m4": { "v1": { min: 22, max: 26 }, "v3": { min: 18, max: 22 } },
+                    "m7": { "v4": { min: 45, max: 50 } },
+                    "m8": { "v2": { min: 25, max: 30 }, "v3": { min: 18, max: 22 } }
+                };
+            }
+
+            const lData = localStorage.getItem('vaishnavi_pricelogs');
+            priceLogs = lData ? JSON.parse(lData) : [];
+
+            googleSheetsWebhookUrl = localStorage.getItem('vaishnavi_webhook_url') || "";
+            if (document.getElementById('googleSheetsWebhookUrl')) {
+                document.getElementById('googleSheetsWebhookUrl').value = googleSheetsWebhookUrl;
+            }
+        }
+
+        function saveMembersToStorage() {
+            localStorage.setItem('vaishnavi_members', JSON.stringify(membersData));
+        }
+
+        function saveVegetablesToStorage() {
+            localStorage.setItem('vaishnavi_veggies', JSON.stringify(vegetablesData));
+        }
+
+        function saveAllotmentsToStorage() {
+            localStorage.setItem('vaishnavi_allotments', JSON.stringify(memberAllotments));
+        }
+
+        function saveSubmissionsToStorage() {
+            localStorage.setItem('vaishnavi_submissions', JSON.stringify(priceSubmissions));
+            localStorage.setItem('vaishnavi_pricelogs', JSON.stringify(priceLogs));
+        }
+
+        function saveWebhookUrl() {
+            const url = document.getElementById('googleSheetsWebhookUrl').value.trim();
+            googleSheetsWebhookUrl = url;
+            localStorage.setItem('vaishnavi_webhook_url', url);
+            showToast('Google Sheets Webhook URL saved!', 'success');
+        }
+
+        function switchAdminTab(tabName) {
+            const tabs = ['Allotments', 'Reports', 'AddMember', 'AddVeg'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`adminTabBtn${t}`);
+                const content = document.getElementById(`adminTab${t}`);
+
+                if (btn && content) {
+                    if (t.toLowerCase() === tabName.toLowerCase()) {
+                        btn.className = "px-4 py-2 text-xs font-bold border-b-2 border-amber-500 text-amber-600 dark:text-amber-400";
+                        content.classList.remove('hidden');
+                    } else {
+                        btn.className = "px-4 py-2 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200";
+                        content.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        function saveShopOwnerPrices() {
+            if (!currentLoggedInMember) return;
+
+            const allottedVegIds = memberAllotments[currentLoggedInMember.id] || [];
+            if (!priceSubmissions[currentLoggedInMember.id]) {
+                priceSubmissions[currentLoggedInMember.id] = {};
+            }
+
+            const nowStr = new Date().toLocaleString('en-IN');
+            const todayStr = new Date().toISOString().split('T')[0];
+            const updatedItems = [];
+
+            allottedVegIds.forEach(vegId => {
+                const minInput = document.getElementById(`input_min_${vegId}`);
+                const maxInput = document.getElementById(`input_max_${vegId}`);
+
+                if (minInput && maxInput) {
+                    const minVal = minInput.value;
+                    const maxVal = maxInput.value;
+                    if (minVal && maxVal) {
+                        const min = Number(minVal);
+                        const max = Number(maxVal);
+
+                        priceSubmissions[currentLoggedInMember.id][vegId] = { min, max };
+                        
+                        const veg = vegetablesData.find(v => v.id === vegId);
+                        const logEntry = {
+                            timestamp: nowStr,
+                            date: todayStr,
+                            shopNumber: currentLoggedInMember.shopNumber || 'N/A',
+                            shopName: currentLoggedInMember.shopName,
+                            ownerName: currentLoggedInMember.name,
+                            phone: currentLoggedInMember.phone,
+                            vegetableName: veg ? veg.name : vegId,
+                            unit: veg ? veg.unit : '1 Kg',
+                            minPrice: min,
+                            maxPrice: max
+                        };
+
+                        priceLogs.push(logEntry);
+                        updatedItems.push(logEntry);
+                    }
+                }
+            });
+
+            saveSubmissionsToStorage();
+            renderPriceTable();
+            closeDashboardModal();
+
+            // Sync with Google Sheets Webhook if configured
+            if (googleSheetsWebhookUrl && updatedItems.length > 0) {
+                fetch(googleSheetsWebhookUrl, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'PRICE_UPDATE',
+                        payload: updatedItems
+                    })
+                }).catch(err => console.log('Google Sheets Sync pending/error:', err));
+            }
+
+            showToast('Daily quotes recorded & archived successfully!', 'success');
+        }
+
+        // CSV EXPORT ENGINE
+        function downloadCSV(csvContent, filename) {
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            const url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", filename);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function exportPriceHistoryCSV() {
+            if (priceLogs.length === 0) {
+                showToast('No daily price log records found yet.', 'info');
+                return;
+            }
+
+            const headers = ["Timestamp", "Date", "Shop Number", "Shop Name", "Owner Name", "Phone", "Vegetable", "Unit", "Min Price (INR)", "Max Price (INR)"];
+            const rows = priceLogs.map(log => [
+                `"${log.timestamp}"`,
+                `"${log.date}"`,
+                `"${log.shopNumber}"`,
+                `"${log.shopName}"`,
+                `"${log.ownerName}"`,
+                `"${log.phone}"`,
+                `"${log.vegetableName}"`,
+                `"${log.unit}"`,
+                log.minPrice,
+                log.maxPrice
+            ]);
+
+            const csvContent = [headers.join(","), ...rows.map(r => r.join(","))].join("\n");
+            downloadCSV(csvContent, `Daily_Vegetable_Price_History_${new Date().toISOString().split('T')[0]}.csv`);
+            showToast('Downloaded Price History CSV', 'success');
+        }
+
+        function exportConsensusCSV() {
+            const headers = ["Vegetable Name", "Unit", "Consensus Min Price (INR)", "Consensus Max Price (INR)", "Total Quotes Received"];
+            const rows = vegetablesData.map(veg => {
+                const c = computeConsensusPrices(veg.id);
+                return [
+                    `"${veg.name}"`,
+                    `"${veg.unit}"`,
+                    c.min !== null ? c.min : 'N/A',
+                    c.max !== null ? c.max : 'N/A',
+                    c.count
+                ];
+            });
+
+            const csvContent = [headers.join(","), ...rows.map(r => r.join(","))].join("\n");
+            downloadCSV(csvContent, `Consensus_Market_Rates_${new Date().toISOString().split('T')[0]}.csv`);
+            showToast('Downloaded Consensus Market Rates CSV', 'success');
+        }
+
+        function exportMembersCSV() {
+            const headers = ["Member ID", "Shop Number", "Owner Name", "Role", "Shop Name", "Phone", "Allotted Vegetable Count"];
+            const rows = membersData.map(m => {
+                const allottedCount = (memberAllotments[m.id] || []).length;
+                return [
+                    `"${m.id}"`,
+                    `"${m.shopNumber || 'N/A'}"`,
+                    `"${m.name}"`,
+                    `"${m.role}"`,
+                    `"${m.shopName}"`,
+                    `"${m.phone}"`,
+                    allottedCount
+                ];
+            });
+
+            const csvContent = [headers.join(","), ...rows.map(r => r.join(","))].join("\n");
+            downloadCSV(csvContent, `Association_Members_Directory_${new Date().toISOString().split('T')[0]}.csv`);
+            showToast('Downloaded Member Directory CSV', 'success');
+        }
+
+        // Consensus Price Calculation Engine
+        function computeConsensusPrices(vegId) {
+            const minQuotes = [];
+            const maxQuotes = [];
+
+            Object.keys(priceSubmissions).forEach(memberId => {
+                const sub = priceSubmissions[memberId][vegId];
+                if (sub && sub.min && sub.max) {
+                    minQuotes.push(Number(sub.min));
+                    maxQuotes.push(Number(sub.max));
+                }
+            });
+
+            if (minQuotes.length === 0) return { min: null, max: null, count: 0 };
+
+            // Find mode (most common value), or median if no mode
+            const getModeOrMedian = (arr) => {
+                const counts = {};
+                let maxFreq = 0;
+                let mode = arr[0];
+
+                arr.forEach(val => {
+                    counts[val] = (counts[val] || 0) + 1;
+                    if (counts[val] > maxFreq) {
+                        maxFreq = counts[val];
+                        mode = val;
+                    }
+                });
+
+                return mode;
+            };
+
+            return {
+                min: getModeOrMedian(minQuotes),
+                max: getModeOrMedian(maxQuotes),
+                count: minQuotes.length
+            };
+        }
+
+        // Render Public Consensus Price Table
+        function renderPriceTable() {
+            const tbody = document.getElementById('priceTableBody');
+            const searchVal = (document.getElementById('vegSearchInput')?.value || '').toLowerCase().trim();
+
+            const filtered = vegetablesData.filter(v => v.name.toLowerCase().includes(searchVal));
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="py-8 text-center text-slate-400">
+                            <i class="fa-solid fa-basket-shopping text-3xl mb-2"></i>
+                            <p>No vegetables found matching your query.</p>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map(veg => {
+                const consensus = computeConsensusPrices(veg.id);
+                const hasData = consensus.min !== null && consensus.max !== null;
+
+                return `
+                    <tr class="hover:bg-slate-50/60 dark:hover:bg-slate-900/40 transition">
+                        <td class="py-3.5 px-6 font-bold text-slate-900 dark:text-white flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-sm shadow-sm">
+                                <i class="${veg.icon}"></i>
+                            </div>
+                            <span>${veg.name}</span>
+                        </td>
+                        <td class="py-3.5 px-4 text-center font-semibold text-slate-500 dark:text-slate-400 text-xs">
+                            ${veg.unit}
+                        </td>
+                        <td class="py-3.5 px-4 text-center font-extrabold text-emerald-600 dark:text-emerald-400 text-base">
+                            ${hasData ? '₹' + consensus.min : '<span class="text-xs text-slate-400 font-normal">Pending</span>'}
+                        </td>
+                        <td class="py-3.5 px-4 text-center font-extrabold text-rose-600 dark:text-rose-400 text-base">
+                            ${hasData ? '₹' + consensus.max : '<span class="text-xs text-slate-400 font-normal">Pending</span>'}
+                        </td>
+                        <td class="py-3.5 px-4 text-center text-xs font-semibold text-slate-500">
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                                <i class="fa-solid fa-user-check text-[10px] text-brand-500"></i> ${consensus.count} Quotes
+                            </span>
+                        </td>
+                        <td class="py-3.5 px-6 text-center">
+                            ${hasData ? `
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-300/40">
+                                    Active Majority
+                                </span>
+                            ` : `
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 border border-amber-300/40">
+                                    Awaiting Input
+                                </span>
+                            `}
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Render Directory Members Grid
+        function renderMembers() {
+            const grid = document.getElementById('membersGrid');
+            const searchVal = (document.getElementById('memberSearchInput')?.value || '').toLowerCase().trim();
+
+            const filtered = membersData.filter(m => 
+                m.name.toLowerCase().includes(searchVal) || 
+                m.role.toLowerCase().includes(searchVal) || 
+                m.shopName.toLowerCase().includes(searchVal) ||
+                (m.shopNumber && m.shopNumber.toLowerCase().includes(searchVal))
+            );
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-8 text-center text-slate-400">
+                        <i class="fa-solid fa-users-slash text-3xl mb-2"></i>
+                        <p>No association members match your search.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(m => {
+                const allottedCount = (memberAllotments[m.id] || []).length;
+                return `
+                    <div class="glass-panel rounded-2xl p-5 border shadow-sm flex flex-col justify-between hover:shadow-md transition group">
+                        <div>
+                            <div class="relative mb-4">
+                                <img src="${m.photo}" alt="${m.name}" class="w-24 h-24 rounded-2xl object-cover mx-auto shadow-md border-2 border-brand-500/20 group-hover:scale-105 transition-transform">
+                                <span class="absolute bottom-0 right-1/2 translate-x-12 translate-y-1 text-[10px] font-extrabold px-2 py-0.5 rounded-full border ${m.badgeClass} shadow-sm">
+                                    ${m.role}
+                                </span>
+                            </div>
+                            <div class="text-center space-y-1 mt-2">
+                                <span class="inline-block px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-[11px] font-bold border border-slate-200 dark:border-slate-700">
+                                    <i class="fa-solid fa-store text-amber-500 mr-1"></i>${m.shopNumber || 'Shop'}
+                                </span>
+                                <h4 class="font-bold text-slate-900 dark:text-white text-base leading-snug">${m.name}</h4>
+                                <p class="text-xs text-brand-600 dark:text-brand-400 font-medium">${m.shopName}</p>
+                                <p class="text-[11px] text-slate-400">Allotted Produce: <b>${allottedCount} Items</b></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Phone:</span>
+                            <a href="tel:${m.phone.replace(/\s+/g, '')}" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1">
+                                <i class="fa-solid fa-phone text-[10px]"></i> ${m.phone}
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Populate Member Dropdown for Login
+        function populateLoginDropdown() {
+            const select = document.getElementById('loginMemberSelect');
+            select.innerHTML = membersData.map(m => `
+                <option value="${m.id}">${m.shopNumber ? m.shopNumber + ' - ' : ''}${m.name} (${m.shopName})</option>
+            `).join('');
+        }
+
+        function updateStats() {
+            document.getElementById('totalShopsBadge').textContent = `${membersData.length} Registered Traders`;
+        }
+
+        // Shop Owner Authentication Logic
+        function openLoginModal() {
+            populateLoginDropdown();
+            document.getElementById('loginModal').classList.remove('hidden');
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').classList.add('hidden');
+        }
+
+        function handleMemberLogin(e) {
+            e.preventDefault();
+            const memberId = document.getElementById('loginMemberSelect').value;
+            const pass = document.getElementById('loginPasscode').value;
+
+            if (pass !== '1234') {
+                showToast('Invalid passcode! Try 1234.', 'error');
+                return;
+            }
+
+            currentLoggedInMember = membersData.find(m => m.id === memberId);
+            closeLoginModal();
+
+            // Update Auth Button in Header
+            document.getElementById('authButtonContainer').innerHTML = `
+                <button onclick="openDashboardModal()" class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2">
+                    <i class="fa-solid fa-store"></i>
+                    <span>${currentLoggedInMember.name.split(' ')[1] || 'Shop'} Portal</span>
+                </button>
+            `;
+
+            openDashboardModal();
+            showToast(`Logged in as ${currentLoggedInMember.name}`, 'success');
+        }
+
+        // Shop Owner Dashboard Logic
+        function openDashboardModal() {
+            if (!currentLoggedInMember) return;
+
+            document.getElementById('dashAvatar').src = currentLoggedInMember.photo;
+            document.getElementById('dashMemberName').textContent = `${currentLoggedInMember.name} (${currentLoggedInMember.shopNumber || 'Shop'})`;
+            document.getElementById('dashShopName').textContent = `${currentLoggedInMember.shopName} (${currentLoggedInMember.role})`;
+
+            const allottedVegIds = memberAllotments[currentLoggedInMember.id] || [];
+            const allottedVegs = vegetablesData.filter(v => allottedVegIds.includes(v.id));
+            const tbody = document.getElementById('dashPriceUpdateRows');
+
+            if (allottedVegs.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="4" class="py-8 text-center text-slate-400">
+                            <i class="fa-solid fa-lock text-3xl mb-2 text-amber-500"></i>
+                            <p class="font-semibold text-slate-700 dark:text-slate-300">No Vegetables Allotted</p>
+                            <p class="text-xs mt-1">Please contact the Association Admin to assign vegetable listings to your shop.</p>
+                        </td>
+                    </tr>
+                `;
+            } else {
+                const memberQuotes = priceSubmissions[currentLoggedInMember.id] || {};
+                tbody.innerHTML = allottedVegs.map(veg => {
+                    const currentQuote = memberQuotes[veg.id] || { min: '', max: '' };
+                    return `
+                        <tr class="border-b border-slate-100 dark:border-slate-800">
+                            <td class="py-3 px-4 font-bold text-slate-800 dark:text-white flex items-center gap-2">
+                                <i class="${veg.icon}"></i>
+                                <span>${veg.name}</span>
+                            </td>
+                            <td class="py-3 px-4 text-center text-xs text-slate-500 dark:text-slate-400">${veg.unit}</td>
+                            <td class="py-3 px-4 text-center">
+                                <input type="number" min="1" id="input_min_${veg.id}" value="${currentQuote.min}" placeholder="Min ₹" class="w-24 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-center font-bold text-emerald-600 dark:text-emerald-400 focus:ring-2 focus:ring-emerald-500 text-sm">
+                            </td>
+                            <td class="py-3 px-4 text-center">
+                                <input type="number" min="1" id="input_max_${veg.id}" value="${currentQuote.max}" placeholder="Max ₹" class="w-24 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-center font-bold text-rose-600 dark:text-rose-400 focus:ring-2 focus:ring-rose-500 text-sm">
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+            }
+
+            document.getElementById('dashboardModal').classList.remove('hidden');
+        }
+
+        function closeDashboardModal() {
+            document.getElementById('dashboardModal').classList.add('hidden');
+        }
+
+        function saveShopOwnerPrices() {
+            if (!currentLoggedInMember) return;
+
+            const allottedVegIds = memberAllotments[currentLoggedInMember.id] || [];
+            if (!priceSubmissions[currentLoggedInMember.id]) {
+                priceSubmissions[currentLoggedInMember.id] = {};
+            }
+
+            allottedVegIds.forEach(vegId => {
+                const minInput = document.getElementById(`input_min_${vegId}`);
+                const maxInput = document.getElementById(`input_max_${vegId}`);
+
+                if (minInput && maxInput) {
+                    const minVal = minInput.value;
+                    const maxVal = maxInput.value;
+                    if (minVal && maxVal) {
+                        priceSubmissions[currentLoggedInMember.id][vegId] = {
+                            min: Number(minVal),
+                            max: Number(maxVal)
+                        };
+                    }
+                }
+            });
+
+            saveSubmissionsToStorage();
+            renderPriceTable();
+            closeDashboardModal();
+            showToast('Daily quotes submitted successfully!', 'success');
+        }
+
+        function logoutShopOwner() {
+            currentLoggedInMember = null;
+            closeDashboardModal();
+            document.getElementById('authButtonContainer').innerHTML = `
+                <button onclick="openLoginModal()" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-brand-600/20 transition flex items-center gap-2">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Shop Owner Login</span>
+                </button>
+            `;
+            showToast('Logged out of shop portal', 'info');
+        }
+
+        // Admin Management Logic
+        function openAdminLoginModal() {
+            document.getElementById('adminLoginModal').classList.remove('hidden');
+        }
+
+        function closeAdminLoginModal() {
+            document.getElementById('adminLoginModal').classList.add('hidden');
+        }
+
+        function handleAdminLogin(e) {
+            e.preventDefault();
+            const u = document.getElementById('adminUser').value;
+            const p = document.getElementById('adminPass').value;
+
+            if (u === 'admin' && p === 'admin123') {
+                isAdminLoggedIn = true;
+                closeAdminLoginModal();
+                openAdminPanelModal();
+                showToast('Authenticated as Administrator', 'success');
+            } else {
+                showToast('Invalid admin credentials', 'error');
+            }
+        }
+
+        function openAdminPanelModal() {
+            const select = document.getElementById('adminMemberSelect');
+            select.innerHTML = membersData.map(m => `
+                <option value="${m.id}">${m.shopNumber ? m.shopNumber + ' - ' : ''}${m.name} (${m.shopName})</option>
+            `).join('');
+
+            renderAdminAllotments();
+            document.getElementById('adminPanelModal').classList.remove('hidden');
+        }
+
+        function closeAdminPanelModal() {
+            document.getElementById('adminPanelModal').classList.add('hidden');
+        }
+
+        function switchAdminTab(tabName) {
+            const tabs = ['Allotments', 'AddMember', 'AddVeg'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`adminTabBtn${t}`);
+                const content = document.getElementById(`adminTab${t}`);
+
+                if (btn && content) {
+                    if (t.toLowerCase() === tabName.toLowerCase()) {
+                        btn.className = "px-4 py-2 text-xs font-bold border-b-2 border-amber-500 text-amber-600 dark:text-amber-400";
+                        content.classList.remove('hidden');
+                    } else {
+                        btn.className = "px-4 py-2 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200";
+                        content.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        function renderAdminAllotments() {
+            const memberId = document.getElementById('adminMemberSelect').value;
+            const allotted = memberAllotments[memberId] || [];
+            const tbody = document.getElementById('adminAllotmentRows');
+
+            tbody.innerHTML = vegetablesData.map(veg => {
+                const isChecked = allotted.includes(veg.id);
+                return `
+                    <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                        <td class="py-3 px-4 font-bold text-slate-800 dark:text-white flex items-center gap-2">
+                            <i class="${veg.icon}"></i>
+                            <span>${veg.name}</span>
+                        </td>
+                        <td class="py-3 px-4 text-center text-xs text-slate-500">${veg.unit}</td>
+                        <td class="py-3 px-4 text-center">
+                            <input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleVegAllotment('${memberId}', '${veg.id}', this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400 cursor-pointer">
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function toggleVegAllotment(memberId, vegId, isChecked) {
+            if (!memberAllotments[memberId]) memberAllotments[memberId] = [];
+
+            if (isChecked) {
+                if (!memberAllotments[memberId].includes(vegId)) {
+                    memberAllotments[memberId].push(vegId);
+                }
+            } else {
+                memberAllotments[memberId] = memberAllotments[memberId].filter(id => id !== vegId);
+            }
+
+            saveAllotmentsToStorage();
+            renderMembers();
+            showToast('Allotments updated for shop owner', 'success');
+        }
+
+        // Add New Shop Owner Handler
+        function handleAddNewMember(e) {
+            e.preventDefault();
+            const shopNumber = document.getElementById('newMemberShopNumber').value.trim();
+            const name = document.getElementById('newMemberName').value.trim();
+            const shopName = document.getElementById('newMemberShop').value.trim();
+            const role = document.getElementById('newMemberRole').value;
+            const phone = document.getElementById('newMemberPhone').value.trim();
+            const photoInput = document.getElementById('newMemberPhoto').value.trim();
+
+            const defaultPhoto = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80";
+            const photo = photoInput || defaultPhoto;
+
+            const badgeClasses = {
+                'President': 'bg-amber-100 text-amber-800 border-amber-300',
+                'Vice President': 'bg-amber-100 text-amber-800 border-amber-300',
+                'Secretary': 'bg-emerald-100 text-emerald-800 border-emerald-300',
+                'Treasurer': 'bg-blue-100 text-blue-800 border-blue-300',
+                'Executive Member': 'bg-slate-100 text-slate-800 border-slate-300',
+                'Shop Owner Member': 'bg-slate-100 text-slate-800 border-slate-300'
+            };
+
+            const newId = 'm_' + Date.now();
+            const newMember = {
+                id: newId,
+                name: name,
+                role: role,
+                shopNumber: shopNumber || 'N/A',
+                shopName: shopName,
+                phone: phone,
+                photo: photo,
+                badgeClass: badgeClasses[role] || 'bg-slate-100 text-slate-800 border-slate-300'
+            };
+
+            membersData.push(newMember);
+            memberAllotments[newId] = [];
+
+            saveMembersToStorage();
+            saveAllotmentsToStorage();
+
+            renderMembers();
+            populateLoginDropdown();
+            updateStats();
+
+            e.target.reset();
+            switchAdminTab('allotments');
+            openAdminPanelModal();
+
+            document.getElementById('adminMemberSelect').value = newId;
+            renderAdminAllotments();
+
+            showToast(`Registered new shop owner (${shopNumber}): ${name}`, 'success');
+        }
+
+        // Add New Vegetable Handler
+        function handleAddNewVegetable(e) {
+            e.preventDefault();
+            const name = document.getElementById('newVegName').value.trim();
+            const unit = document.getElementById('newVegUnit').value.trim();
+            const iconClass = document.getElementById('newVegIcon').value;
+
+            const newId = 'v_' + Date.now();
+            const newVeg = {
+                id: newId,
+                name: name,
+                unit: unit,
+                icon: iconClass + " text-brand-600 dark:text-brand-400"
+            };
+
+            vegetablesData.push(newVeg);
+            saveVegetablesToStorage();
+
+            renderPriceTable();
+
+            e.target.reset();
+            switchAdminTab('allotments');
+            renderAdminAllotments();
+
+            showToast(`Added ${name} to vegetable listings`, 'success');
+        }
+
+        // Theme Toggle Logic
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.className = 'fa-solid fa-moon';
+            } else {
+                html.classList.add('dark');
+                icon.className = 'fa-solid fa-sun text-yellow-400';
+            }
+        }
+
+        // Toast Notification System
+        function showToast(msg, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+
+            const bgColors = {
+                success: 'bg-emerald-600 text-white',
+                error: 'bg-rose-600 text-white',
+                info: 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900'
+            };
+
+            toast.className = `px-4 py-2.5 rounded-xl text-xs font-bold shadow-xl transition transform translate-y-2 opacity-0 pointer-events-auto flex items-center gap-2 ${bgColors[type]}`;
+            toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${msg}</span>`;
+
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-2', 'opacity-0');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
